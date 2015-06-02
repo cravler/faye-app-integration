@@ -1,0 +1,15 @@
+{
+    "private": true,
+    "name": "faye-app-integration",
+    "description": "Faye-app integration",
+    "version": "0.0.1",
+    "author": "Sergei Vizel",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "npm run install-plugins && faye-app",
+        "install-plugins": "./bin/npm-install-plugins.sh ./plugins"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "cravler/faye-app-integration",
+    "type": "faye-app-integration",
+    "licence": "MIT",
+    "authors": [
+        {
+            "name": "Sergei Vizel",
+            "email": "sergei.vizel@gmail.com",
+            "homepage": "http://github.com/cravler"
+        }
+    ],
+    "require": {
+        "cravler/composer-faye-app-integration-plugin": "~1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
