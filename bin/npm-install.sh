@@ -21,5 +21,5 @@ CACHE_DIR="tmp"
 
 cd "${PACKAGE_DIR}"
 rm -Rf "${PACKAGE_DIR}/node_modules"
-npm install --cache="${CACHE_DIR}" --loglevel=info
+npm install --cache="${CACHE_DIR}" --loglevel=error
 npm cache clean --cache="${CACHE_DIR}"
