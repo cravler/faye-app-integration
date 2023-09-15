@@ -13,8 +13,8 @@ DIR="$1"
 NPROC=`nproc`
 
 find -L "${DIR}" -name "node_modules" -print0 |
-    xargs -0 --max-procs=${NPROC} rm -Rf
+    xargs -0 -P ${NPROC} rm -Rf
 
 find -L "${DIR}" -name "package.json" -print0 |
     sed s,/package.json,,g |
-    xargs -0 --max-procs=${NPROC} -I % bash -c "${SCRIPT_DIR}/npm-install.sh %"
+    xargs -0 -P ${NPROC} -I % bash -c "${SCRIPT_DIR}/npm-install.sh %"
